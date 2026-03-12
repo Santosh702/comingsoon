@@ -1,12 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Santosh Shrestha | Portfolio Launch</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<title>Portfolio 2026</title>
 
 <style>
 
@@ -14,249 +11,137 @@
 margin:0;
 padding:0;
 box-sizing:border-box;
+font-family:Arial, sans-serif;
 }
 
-body{
-height:100vh;
-overflow:hidden;
-font-family:Inter, sans-serif;
-color:white;
-background:#020617;
+/* Color Palette */
+
+.palette{
 display:flex;
-align-items:center;
+gap:20px;
+padding:20px;
+background:#f4f4f4;
+}
+
+.color{
+width:25px;
+height:25px;
+border-radius:50%;
+}
+
+.c1{background:#0B1FAF;}
+.c2{background:#2E5BFF;}
+.c3{background:#FF7A30;}
+.c4{background:#EAE2D2;}
+
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:black;
+color:white;
+display:flex;
+flex-direction:column;
 justify-content:center;
-}
-
-/* PARALLAX BACKGROUND */
-
-.parallax{
-position:absolute;
-width:120%;
-height:120%;
-top:-10%;
-left:-10%;
-}
-
-.layer{
-position:absolute;
-width:100%;
-height:100%;
-background:radial-gradient(circle at center,#38bdf8 0%,transparent 60%);
-opacity:.15;
-filter:blur(120px);
-}
-
-/* CONTAINER */
-
-.container{
-position:relative;
-z-index:10;
+align-items:center;
 text-align:center;
-max-width:800px;
-padding:40px;
-}
-
-/* TITLE */
-
-.tag{
-font-family:"JetBrains Mono",monospace;
-color:#38bdf8;
-margin-bottom:15px;
-}
-
-h1{
-font-size:60px;
-font-weight:600;
-background:linear-gradient(90deg,#38bdf8,#22c55e,#38bdf8);
-background-size:200%;
--webkit-background-clip:text;
-color:transparent;
-animation:shine 6s linear infinite;
-}
-
-@keyframes shine{
-0%{background-position:0%}
-100%{background-position:200%}
 }
 
 .subtitle{
-margin-top:15px;
-opacity:.75;
-font-size:18px;
-margin-bottom:50px;
-}
-
-/* TIMER */
-
-.timer{
-display:flex;
-justify-content:center;
-gap:25px;
-flex-wrap:wrap;
-}
-
-.time-box{
-background:rgba(255,255,255,0.05);
-border:1px solid rgba(255,255,255,0.1);
-border-radius:14px;
-padding:25px;
-width:120px;
-backdrop-filter:blur(10px);
-transition:.4s;
-}
-
-.time-box:hover{
-transform:translateY(-6px);
-border-color:#38bdf8;
-box-shadow:0 10px 30px rgba(56,189,248,.3);
-}
-
-.time-box h2{
-font-family:"JetBrains Mono",monospace;
-font-size:42px;
-}
-
-.time-box span{
-font-size:12px;
-opacity:.6;
-letter-spacing:1px;
-}
-
-/* FOOTER */
-
-.dev-line{
-margin-top:40px;
-font-family:"JetBrains Mono",monospace;
-opacity:.7;
-}
-
-footer{
-margin-top:30px;
-opacity:.5;
+letter-spacing:4px;
+margin-bottom:10px;
 font-size:14px;
 }
 
-/* MOBILE */
-
-@media(max-width:700px){
-
-h1{
-font-size:38px;
+.title{
+font-size:150px;
+font-weight:900;
+color:#2E5BFF;
 }
 
-.time-box{
-width:90px;
-padding:18px;
+.year{
+margin-top:20px;
+font-size:20px;
 }
 
-.time-box h2{
-font-size:28px;
+
+/* ABOUT SECTION */
+
+.about{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:100px 10%;
+background:#f2f2f2;
 }
 
+.about-text{
+width:50%;
+}
+
+.about-text h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.about-text p{
+font-size:18px;
+line-height:1.6;
+}
+
+.about-img img{
+width:300px;
 }
 
 </style>
+
 </head>
 
 <body>
 
-<div class="parallax">
-<div class="layer" id="layer1"></div>
-<div class="layer" id="layer2"></div>
-<div class="layer" id="layer3"></div>
+<!-- COLOR PALETTE -->
+<div class="palette">
+<span class="color c1"></span>
+<span class="color c2"></span>
+<span class="color c3"></span>
+<span class="color c4"></span>
 </div>
 
-<div class="container">
 
-<div class="tag">&lt; Santosh Shrestha / Graphic designer &gt;</div>
+<!-- HERO -->
 
-<h1>Portfolio Launching</h1>
+<section class="hero">
 
-<div class="subtitle">
-A Graphic Designer portfolio is coming soon.<br>
-Launching in <strong>168 hours</strong>.
-</div>
+<h4 class="subtitle">GRAPHIC DESIGNER</h4>
 
-<div class="timer">
+<h1 class="title">PORTFOLIO</h1>
 
-<div class="time-box">
-<h2 id="days">0</h2>
-<span>DAYS</span>
-</div>
+<p class="year">2026</p>
 
-<div class="time-box">
-<h2 id="hours">0</h2>
-<span>HOURS</span>
-</div>
+</section>
 
-<div class="time-box">
-<h2 id="minutes">0</h2>
-<span>MINUTES</span>
-</div>
 
-<div class="time-box">
-<h2 id="seconds">0</h2>
-<span>SECONDS</span>
-</div>
+<!-- ABOUT -->
+
+<section class="about">
+
+<div class="about-text">
+<h2>ABOUT ME</h2>
+
+<p>
+I am a creative graphic designer passionate about branding,
+visual communication, and digital experiences. I enjoy creating
+modern and unique designs that help brands stand out.
+</p>
 
 </div>
 
-<div class="dev-line">
-Digital design is like painting, except the paint never dries.
+<div class="about-img">
+<img src="character.png" alt="designer">
 </div>
 
-<footer>
-© 2026
-</footer>
-
-</div>
-
-<script>
-
-/* COUNTDOWN */
-
-let totalSeconds = 168 * 60 * 60;
-
-function updateTimer(){
-
-let days=Math.floor(totalSeconds/86400);
-let hours=Math.floor((totalSeconds%86400)/3600);
-let minutes=Math.floor((totalSeconds%3600)/60);
-let seconds=totalSeconds%60;
-
-document.getElementById("days").innerText=days;
-document.getElementById("hours").innerText=hours;
-document.getElementById("minutes").innerText=minutes;
-document.getElementById("seconds").innerText=seconds;
-
-totalSeconds--;
-
-if(totalSeconds<=0){
-document.querySelector(".timer").innerHTML=" Portfolio is Live!";
-clearInterval(timer);
-}
-
-}
-
-updateTimer();
-let timer=setInterval(updateTimer,1000);
-
-
-/* PARALLAX MOUSE EFFECT */
-
-document.addEventListener("mousemove",(e)=>{
-
-let x=e.clientX/window.innerWidth;
-let y=e.clientY/window.innerHeight;
-
-document.getElementById("layer1").style.transform=`translate(${x*20}px,${y*20}px)`;
-document.getElementById("layer2").style.transform=`translate(${x*40}px,${y*40}px)`;
-document.getElementById("layer3").style.transform=`translate(${x*60}px,${y*60}px)`;
-
-});
-
-</script>
+</section>
 
 </body>
 </html>
-```
